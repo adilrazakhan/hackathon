@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Static Resume Builder By Adil Raza</h1>
+    <form id="resumedoc"> 
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstname">First Name: </label><br>
+            <input type="text" id="firstname" name="firstname" required><br>
+            <label for="lastname">Last Name: </label><br>
+            <input type="text" id="lastname" name="lastname" required><br>
+            <label for="fathername">Father Name: </label><br>
+            <input type="text" id="fathername" name="fathername" required><br>
+            <label for="email">Email: </label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="contactnumber">Contact Number: </label><br>
+            <input type="contactnumber" id="contactnumber" name="contactnumber" required><br>
+
+            <label for="profilepicture">Profile Picture</label>
+            <input type="file" id="profilepicture" name="profilepicture" accept="image/*" required>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <textarea id="education" name="education" raws="5" required></textarea><br>
+        </fieldset>
+        <fieldset>
+            <legend>Experience</legend>
+            <textarea id="experience" name="experience" raws="5" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <textarea id="skills" name="skills" raws="4" required></textarea><br>
+        </fieldset>
+
+        <Button type="submit">Generate Your Resume</Button>
+    </form>
+
+</body>
+</html>
